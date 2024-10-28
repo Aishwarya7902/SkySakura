@@ -1,42 +1,109 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Inconsolata:wght@200&family=Kanit:ital,wght@0,100;1,100&family=New+Tegomin&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+   /* background: #222;  */
+   background: #e2d4ff;
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
 .card {
-  padding: 2em;
+  display: grid;
+  width: 90%;
+  min-height: 50vh;
+  max-width: 470px;
+  background: linear-gradient(45deg, #2f4680, #b6a0e6);
+  color: #fff;
+  margin: 60px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+  
 }
 
-.read-the-docs {
-  color: #888;
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.searchInput {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.searchButton {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.searchImg {
+  width: 16px;
+}
+
+.weatherIcon {
+  width: 170px;
+  margin-top: 30px;
+}
+
+.temp {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.city {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.colImage {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.humidity {
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
 }
